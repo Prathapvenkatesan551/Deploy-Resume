@@ -168,6 +168,10 @@
     border-radius: 5px;
 
 }
+.year{
+    display: flex;
+    gap: 10px;
+}
 .leet-level p{
     color: black;
     font-size: 8px;
@@ -215,4 +219,73 @@
     font-size: 24px;
     cursor: pointer;
   }
-  
+  .download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+  }
+  .download a{
+    text-decoration: none;
+  }
+  .download button{
+    display: flex;
+    gap: 5px;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: aquamarine;
+    cursor: pointer;
+  }
+  .Sc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .Sc button{
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: aquamarine;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  .popup-content{
+    overflow-y: scroll;
+    
+
+  }
+  .Sc button:hover{
+    /* color: aliceblue; */
+
+    background-color: rgb(69, 160, 130);
+  }
+  .sc-icon{
+    width: 25px;
+    height: 25px;
+  }
+  .download .down{
+    width: 20px;
+    height: 20px;
+  }
+
+  .download button:hover{
+    background-color: rgb(62, 167, 97);
+  }

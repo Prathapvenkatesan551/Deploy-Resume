@@ -2,18 +2,48 @@ import React from "react";
 import "./Resume.css";
 import { useState } from "react";
 
-const Resume = () => {
 
+const Resume = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [head, setHead] = useState('');
+  const [link, setLink] = useState('');
+
   const [popupContent, setPopupContent] = useState('');
+  const [popupContent2, setPopupContent2] = useState('');
+  const [popupContent3, setPopupContent3] = useState('');
   let project1='Implemented a Full stack Project On Ecommerce Web application ';
 
   const handleMoreDetails = (project) => {
     // Set the popup content based on the project
     if (project === 'MarketPlace') {
-      setPopupContent('Implemente');
-    } else if (project === 'PasswordManager') {
-      setPopupContent('Details about the Password Manager...');
+      setHead(`MarketPlace Application`);
+      setLink(`https://github.com/Prathapvenkatesan551/FullStack-Project`);
+      setPopupContent(`
+        
+        This project is a full-stack web application designed to facilitate the buying and selling of properties, specifically focused on real estate, such as houses. The primary objective is to create a seamless, user-friendly platform where sellers can list their properties for sale,
+         and potential buyers can browse and express interest in these listings. Sellers have access to their own dedicated portal, allowing them to easily manage their property details, including adding, editing, and updating property information as needed. Buyers can explore available 
+         properties and, if interested, can contact the seller directly through an integrated web form.
+        `);
+      setPopupContent2(`
+        The application incorporates essential features such as secure user authentication, dynamic property listings, form-based 
+        communication between buyers and sellers, and the ability for sellers to maintain control over their listings. The architecture
+         of the project involves a robust backend built using enterprise-level technologies and a responsive, intuitive frontend that ensures a smooth user experience across different devices. This solution aims to simplify 
+        the process of property transactions, providing both buyers and sellers with the tools they need in a single web portal.
+          `);
+
+          setPopupContent3(`HTML , CSS , JavaScript , React Js , Spring Boot , My Sql`);
+    
+        } else if (project === 'PasswordManager') {
+      setHead(`Password Manager Application`);
+      setLink(`https://github.com/Prathapvenkatesan551/JAVA-PROJECT-APM`);
+      setPopupContent(`
+        This project is a Java Swing-based desktop application designed as a comprehensive Password Manager, focusing on enhancing users' digital security. The primary functionalities include strong password generation, password health checks, and secure password storage. Users can generate strong, random passwords tailored to their specific requirements, significantly improving their defense against unauthorized access. The password health check feature assesses the strength of existing passwords, providing feedback and recommendations for enhancing their security based on criteria such as length and complexity.
+        `);
+      setPopupContent2(`
+        The application employs efficient file handling techniques to securely store user passwords in an encrypted format, ensuring that sensitive information remains protected from potential threats. The intuitive graphical user interface (GUI) allows users to navigate effortlessly through the application's features, making password management simple and effective. By prioritizing data security through encryption and providing essential tools for strong password creation and assessment, this Password Manager aims to empower users to maintain better control over their digital security.
+        `);
+        setPopupContent3(`Java [ AWT , Swing , Oops ]`);
+    
     }
     setShowPopup(true);
   };
@@ -50,14 +80,15 @@ const Resume = () => {
                 <div className="content">
                   <div className="year">
                     <img src="calendar.png" alt="" className="calender" />
-                    2021-2025 Batch
+                    <h4>2021 - 2025 Batch</h4>
                   </div>
                   <h3>Bachelor's Degree</h3>
                   <p>
                     Computer Science and Engineering in Erode Sengunthar Engineering college
-                    ,CGPA : 8.2
+                   
 
                   </p>
+                  <p>CGPA : 8.2</p>
                 </div>
               </div>
 
@@ -65,13 +96,14 @@ const Resume = () => {
                 <div className="content">
                   <div className="year">
                     <img src="calendar.png" alt="" className="calender" />
-                    2019-2021 Batch
+                    2019 - 2021 Batch
                   </div>
                   <h3>Higher Secondary 12th</h3>
                   <p>
                     Bio Maths in Sri Ramakrishna matric higher secondary school,
-                    Percentage : 82.6%
+                   
                   </p>
+                  <p> Percentage : 82.6%</p>
                 </div>
               </div>
 
@@ -79,13 +111,14 @@ const Resume = () => {
                 <div className="content">
                   <div className="year">
                     <img src="calendar.png" alt="" className="calender" />
-                    2018-2019 Batch
+                    2018 - 2019 Batch
                   </div>
                   <h3>SSLC - 10th</h3>
                   <p>
                   Muthzamil Government Higher Secondary School ,
-                  Percentage : 68.4%
+                  
                   </p>
+                  <p>Percentage : 68.4%</p>
                 </div>
               </div>
             </div>
@@ -95,7 +128,7 @@ const Resume = () => {
       <br />
       <div className="head1">
         <h1>Projects</h1>
-        <img src="degree.png" alt="" className="degree" />
+        {/* <img src="degree.png" alt="" className="degree" /> */}
       </div>
       <br />
 
@@ -117,9 +150,17 @@ const Resume = () => {
         <div className="popup">
           <div className="popup-content">
             <span className="close" onClick={closePopup}>&times;</span>
-            <h2>MarketPlace Application</h2>
+            <h2>{head}</h2>
             <p>{popupContent}</p>
-            <button>GitHub</button>
+            <p>{popupContent2}</p>
+            <h2>Technologies Used : <p>{popupContent3}</p></h2>
+            <div className="Sc">
+              <a href={link}>
+            <button>GitHub
+              <img src="github.png" alt=""  className="sc-icon"/>
+            </button>
+            </a>
+            </div>
           </div>
         </div>
       )}
@@ -158,7 +199,7 @@ const Resume = () => {
       <br />
       <div className="head1">
         <h1>Skills Achivements</h1>
-        <img src="degree.png" alt="" className="degree" />
+        {/* <img src="degree.png" alt="" className="degree" /> */}
       </div>
       <br />
       <div className="skillsAchieved">
@@ -187,8 +228,16 @@ const Resume = () => {
                 <button onClick={handleHackerrank}>view</button>
             </div>
       </div>
+      <div className="download">
+      <a href="Final_CV_F.pdf" download>
+          <button >Download Resume 
+            <img src="download.png" alt="" className="down" />
+          </button>
+      </a>
+      </div>
     </div>
   );
 };
+
 
 export default Resume;

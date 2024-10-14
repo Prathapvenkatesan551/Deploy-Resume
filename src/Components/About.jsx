@@ -6,14 +6,15 @@ const About = () => {
       <h1>About Me</h1>
       <div className="line"></div>
       <p>
-        I'm currently pursuing my BE in Computer Science, specializing in Full
-        Stack Development, Enterprise Java, Data structures, web technologies,
-        and professional portfolios.
+      I am currently pursuing a Bachelor of Engineering in Computer Science, with a focus on Full Stack Development, Enterprise Java, Data Structures, and Web Technologies.
+      My academic journey has equipped me with a strong foundation in both frontend and backend technologies, allowing me to build scalable, responsive web applications.
       </p>
       <p>
-        With a strong passion for mentoring and a hands-on approach, I guide
-        final year students to excel in their projects, providing them with
-        practical skills essential for success in the fast-paced tech sector
+      I have a deep understanding of modern software development practices, including enterprise-level solutions, optimized algorithms, and data management techniques. 
+      </p>
+      <p>
+      I am also passionate about creating professional portfolios that highlight my technical skills, innovative projects, and personal achievements. Through hands-on experience and project-based learning,
+       I continuously work to enhance my expertise in the ever-evolving field of software development
       </p>
 
       <h2>Actions I'm Taking</h2>
@@ -39,14 +40,14 @@ const About = () => {
         <img src="inno.png" alt="" className="image"/>
         <div className="caption">
           <h3>Innovative thing</h3>
-          <label htmlFor="">Challenging the Problem in coding platforms</label>
+          <label htmlFor="">Challenging the Problems and Contest in coding platforms</label>
         </div>
         </div>
         <div className="card">
         <img src="fire.png" alt="" className="image"/>
         <div className="caption">
           <h3>Video Game</h3>
-          <label htmlFor="">high-speed thrills and compete against other drivers in a variety of races and challenges</label>
+          <label htmlFor="">Engage in fast-paced survival battles, scavenge weapons, strategize, and outlast enemies to achieve victory</label>
         </div>
         </div>
         
