@@ -229,7 +229,7 @@ const Resume = () => {
             </div>
       </div>
       <div className="download">
-      <a href="Final_CV_F.pdf" download>
+      <a href="Resume_.pdf" download>
           <button >Download Resume 
             <img src="download.png" alt="" className="down" />
           </button>
