@@ -1,4 +1,3 @@
-// import React from 'react'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css'
@@ -24,7 +23,7 @@ const Contact = () => {
 
     if (res.success) {
      alert("Mail sent successfully");
-      window.location.href = '/';
+      window.location.href = '/Deploy-Resume/';
 
     }
   };

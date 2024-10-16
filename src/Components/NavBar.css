@@ -51,3 +51,15 @@
 }
     
 }
+
+
+
+  .NavBar .bar2 button.active {
+    /* background-color: blue; */
+    color: rgb(56, 170, 185);
+  }
+  
+  .NavBar .bar2 button:hover {
+    color: rgb(57, 209, 230);
+  }
+  

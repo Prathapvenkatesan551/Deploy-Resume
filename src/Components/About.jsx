@@ -40,7 +40,7 @@ const About = () => {
         <img src="inno.png" alt="" className="image"/>
         <div className="caption">
           <h3>Innovative thing</h3>
-          <label htmlFor="">Challenging the Problems and Contest in coding platforms</label>
+          <label htmlFor="">Challenging and Enhancing the Innovative Development in Tech Stack</label>
         </div>
         </div>
         <div className="card">

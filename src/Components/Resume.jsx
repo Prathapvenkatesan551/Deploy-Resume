@@ -128,7 +128,6 @@ const Resume = () => {
       <br />
       <div className="head1">
         <h1>Projects</h1>
-        {/* <img src="degree.png" alt="" className="degree" /> */}
       </div>
       <br />
 

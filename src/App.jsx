@@ -51,7 +51,7 @@ function App() {
           <div className="profile">
             <div>
             <img src="profile.jpg" alt="profile" className="DP" />
-            <h3>Prathap V</h3>
+            <h3 className="myname">Prathap V</h3>
             <h2>Full Stack Developer</h2>
             </div>
             <div>
